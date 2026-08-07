@@ -55,6 +55,20 @@ npx skills add limi58/skills -g -a codex
 
 兼容 skills CLI 仅表示这些 skills 可以从本仓库安装，不代表获得 skills.sh 的官方收录、验证、认证或背书。
 
+## 更新已安装的 skills
+
+交互式更新已安装的 skills：
+
+```powershell
+npx skills update
+```
+
+更新指定 skill：
+
+```powershell
+npx skills update windows-utf8-shell
+```
+
 ## 许可证
 
 本项目使用 [MIT License](LICENSE)。

@@ -55,6 +55,20 @@ Start a new Codex session after installation so the newly installed skills are d
 
 Compatibility with the skills CLI means these skills can be installed from this repository. It does not imply official listing, verification, certification, or endorsement by skills.sh.
 
+## Update installed skills
+
+Update installed skills interactively:
+
+```powershell
+npx skills update
+```
+
+Update a specific skill:
+
+```powershell
+npx skills update windows-utf8-shell
+```
+
 ## License
 
 Released under the [MIT License](LICENSE).
