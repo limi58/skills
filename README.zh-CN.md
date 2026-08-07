@@ -13,42 +13,23 @@
 
 ## 环境要求
 
-- 带有 `npm` 和 `npx` 的 [Node.js](https://nodejs.org/)
+- 带有 `npm`/`npx` 或 `pnpm` 的 [Node.js](https://nodejs.org/)
 - 受支持的 AI 编程代理，例如 [Codex](https://developers.openai.com/codex/skills)
 
 ## 使用 skills CLI 安装
 
 本仓库遵循 [`skills/<name>/SKILL.md`](https://github.com/vercel-labs/skills) 发现结构，可通过 [skills.sh](https://skills.sh/) CLI 安装。
 
-列出可用的 skills：
+启动交互式安装器，并选择要安装的 skills：
 
-```powershell
-npx skills add limi58/skills --list
-```
-
-启动交互式安装器：
-
-```powershell
+```shell
 npx skills add limi58/skills
 ```
 
-安装指定 skill：
+或使用 pnpm：
 
-```powershell
-npx skills add limi58/skills --skill git-commit-push
-npx skills add limi58/skills --skill windows-utf8-shell
-```
-
-在当前项目中为 Codex 安装整个集合：
-
-```powershell
-npx skills add limi58/skills -a codex
-```
-
-为 Codex 全局安装整个集合：
-
-```powershell
-npx skills add limi58/skills -g -a codex
+```shell
+pnpm dlx skills add limi58/skills
 ```
 
 安装后请启动新的 Codex 会话，使新安装的 skills 被正确发现。
@@ -59,13 +40,13 @@ npx skills add limi58/skills -g -a codex
 
 交互式更新已安装的 skills：
 
-```powershell
+```shell
 npx skills update
 ```
 
 更新指定 skill：
 
-```powershell
+```shell
 npx skills update windows-utf8-shell
 ```
 
