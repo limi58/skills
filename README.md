@@ -13,42 +13,16 @@ A collection of reusable skills for AI coding agents. Each skill packages focuse
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/) with `npm` and `npx`
+- [Node.js](https://nodejs.org/) with `pnpm`
 - A supported AI coding agent, such as [Codex](https://developers.openai.com/codex/skills)
 
 ## Install with the skills CLI
 
 This repository follows the [`skills/<name>/SKILL.md`](https://github.com/vercel-labs/skills) discovery layout and can be installed through the [skills.sh](https://skills.sh/) CLI.
 
-List the available skills:
+Start the interactive installer and choose the skills you want to install:
 
-```powershell
-npx skills add limi58/skills --list
-```
-
-Start the interactive installer:
-
-```powershell
-npx skills add limi58/skills
-```
-
-Install a specific skill:
-
-```powershell
-npx skills add limi58/skills --skill git-commit-push
-npx skills add limi58/skills --skill windows-utf8-shell
-```
-
-Install the collection for Codex in the current project:
-
-```powershell
-npx skills add limi58/skills -a codex
-```
-
-Install the collection for Codex globally:
-
-```powershell
-npx skills add limi58/skills -g -a codex
+pnpm dlx skills add limi58/skills
 ```
 
 Start a new Codex session after installation so the newly installed skills are discovered.
@@ -59,14 +33,14 @@ Compatibility with the skills CLI means these skills can be installed from this 
 
 Update installed skills interactively:
 
-```powershell
-npx skills update
+```shell
+pnpm dlx skills update
 ```
 
 Update a specific skill:
 
-```powershell
-npx skills update windows-utf8-shell
+```shell
+pnpm dlx skills update windows-utf8-shell
 ```
 
 ## License
