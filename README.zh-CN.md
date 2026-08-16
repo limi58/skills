@@ -13,7 +13,7 @@
 
 ## 环境要求
 
-- 带有 `npm`/`npx` 或 `pnpm` 的 [Node.js](https://nodejs.org/)
+- 带有 `pnpm` 的 [Node.js](https://nodejs.org/)
 - 受支持的 AI 编程代理，例如 [Codex](https://developers.openai.com/codex/skills)
 
 ## 使用 skills CLI 安装
@@ -22,13 +22,6 @@
 
 启动交互式安装器，并选择要安装的 skills：
 
-```shell
-npx skills add limi58/skills
-```
-
-或使用 pnpm：
-
-```shell
 pnpm dlx skills add limi58/skills
 ```
 
@@ -41,13 +34,13 @@ pnpm dlx skills add limi58/skills
 交互式更新已安装的 skills：
 
 ```shell
-npx skills update
+pnpm dlx skills update
 ```
 
 更新指定 skill：
 
 ```shell
-npx skills update windows-utf8-shell
+pnpm dlx skills update windows-utf8-shell
 ```
 
 ## 许可证

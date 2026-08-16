@@ -13,7 +13,7 @@ A collection of reusable skills for AI coding agents. Each skill packages focuse
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/) with `npm`/`npx` or `pnpm`
+- [Node.js](https://nodejs.org/) with `pnpm`
 - A supported AI coding agent, such as [Codex](https://developers.openai.com/codex/skills)
 
 ## Install with the skills CLI
@@ -22,13 +22,6 @@ This repository follows the [`skills/<name>/SKILL.md`](https://github.com/vercel
 
 Start the interactive installer and choose the skills you want to install:
 
-```shell
-npx skills add limi58/skills
-```
-
-Or use pnpm:
-
-```shell
 pnpm dlx skills add limi58/skills
 ```
 
@@ -41,13 +34,13 @@ Compatibility with the skills CLI means these skills can be installed from this 
 Update installed skills interactively:
 
 ```shell
-npx skills update
+pnpm dlx skills update
 ```
 
 Update a specific skill:
 
 ```shell
-npx skills update windows-utf8-shell
+pnpm dlx skills update windows-utf8-shell
 ```
 
 ## License
