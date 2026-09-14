@@ -34,6 +34,7 @@ Use the following straightforward workflow. The user must explicitly confirm bef
 | 推送目标 | `origin/<current-local-branch>` |
 | 提交信息 | `<proposed-commit-message>` |
 | 改动状态 | `<git-status-short-output>` |
+| 中文总结 | `<本次改动的中文总结，200字以内>` |
 | 项目检查 | 未运行项目测试、lint 或构建。 |
 
 Then ask exactly once: `是否继续提交并推送？请输入是或否。`
