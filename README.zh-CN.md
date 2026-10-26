@@ -13,7 +13,7 @@
 
 ## 环境要求
 
-- 带有 `npm` 和 `npx` 的 [Node.js](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) 和 [pnpm](https://pnpm.io/)（提供 `pnpx`）
 - 受支持的 AI 编程代理，例如 [Codex](https://developers.openai.com/codex/skills)
 
 ## 使用 skills CLI 安装
@@ -23,50 +23,78 @@
 列出可用的 skills：
 
 ```powershell
-npx skills add limi58/skills --list
+pnpx skills@latest add limi58/skills --list
 ```
 
 启动交互式安装器：
 
 ```powershell
-npx skills add limi58/skills
+pnpx skills@latest add limi58/skills
 ```
 
 安装指定 skill：
 
 ```powershell
-npx skills add limi58/skills --skill git-commit-push
-npx skills add limi58/skills --skill windows-utf8-shell
+pnpx skills@latest add limi58/skills --skill git-commit-push
+pnpx skills@latest add limi58/skills --skill windows-utf8-shell
 ```
 
 在当前项目中为 Codex 安装整个集合：
 
 ```powershell
-npx skills add limi58/skills -a codex
+pnpx skills@latest add limi58/skills -a codex
 ```
 
 为 Codex 全局安装整个集合：
 
 ```powershell
-npx skills add limi58/skills -g -a codex
+pnpx skills@latest add limi58/skills -g -a codex
 ```
 
 安装后请启动新的 Codex 会话，使新安装的 skills 被正确发现。
 
 兼容 skills CLI 仅表示这些 skills 可以从本仓库安装，不代表获得 skills.sh 的官方收录、验证、认证或背书。
 
+## 列出已安装的 skills
+
+列出当前项目中已安装的 skills：
+
+```powershell
+pnpx skills@latest list
+```
+
+列出全局已安装的 skills：
+
+```powershell
+pnpx skills@latest list -g
+```
+
+## 移除已安装的 skills
+
+从当前项目中移除指定 skill：
+
+```powershell
+pnpx skills@latest remove windows-utf8-shell
+```
+
+移除全局安装的指定 skill：
+
+```powershell
+pnpx skills@latest remove --global windows-utf8-shell
+```
+
 ## 更新已安装的 skills
 
 交互式更新已安装的 skills：
 
 ```powershell
-npx skills update
+pnpx skills@latest update
 ```
 
 更新指定 skill：
 
 ```powershell
-npx skills update windows-utf8-shell
+pnpx skills@latest update windows-utf8-shell
 ```
 
 ## 许可证

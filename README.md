@@ -13,7 +13,7 @@ A collection of reusable skills for AI coding agents. Each skill packages focuse
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/) with `npm` and `npx`
+- [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/) (provides `pnpx`)
 - A supported AI coding agent, such as [Codex](https://developers.openai.com/codex/skills)
 
 ## Install with the skills CLI
@@ -23,50 +23,78 @@ This repository follows the [`skills/<name>/SKILL.md`](https://github.com/vercel
 List the available skills:
 
 ```powershell
-npx skills add limi58/skills --list
+pnpx skills@latest add limi58/skills --list
 ```
 
 Start the interactive installer:
 
 ```powershell
-npx skills add limi58/skills
+pnpx skills@latest add limi58/skills
 ```
 
 Install a specific skill:
 
 ```powershell
-npx skills add limi58/skills --skill git-commit-push
-npx skills add limi58/skills --skill windows-utf8-shell
+pnpx skills@latest add limi58/skills --skill git-commit-push
+pnpx skills@latest add limi58/skills --skill windows-utf8-shell
 ```
 
 Install the collection for Codex in the current project:
 
 ```powershell
-npx skills add limi58/skills -a codex
+pnpx skills@latest add limi58/skills -a codex
 ```
 
 Install the collection for Codex globally:
 
 ```powershell
-npx skills add limi58/skills -g -a codex
+pnpx skills@latest add limi58/skills -g -a codex
 ```
 
 Start a new Codex session after installation so the newly installed skills are discovered.
 
 Compatibility with the skills CLI means these skills can be installed from this repository. It does not imply official listing, verification, certification, or endorsement by skills.sh.
 
+## List installed skills
+
+List skills installed in the current project:
+
+```powershell
+pnpx skills@latest list
+```
+
+List globally installed skills:
+
+```powershell
+pnpx skills@latest list -g
+```
+
+## Remove installed skills
+
+Remove a specific skill from the current project:
+
+```powershell
+pnpx skills@latest remove windows-utf8-shell
+```
+
+Remove a specific globally installed skill:
+
+```powershell
+pnpx skills@latest remove --global windows-utf8-shell
+```
+
 ## Update installed skills
 
 Update installed skills interactively:
 
 ```powershell
-npx skills update
+pnpx skills@latest update
 ```
 
 Update a specific skill:
 
 ```powershell
-npx skills update windows-utf8-shell
+pnpx skills@latest update windows-utf8-shell
 ```
 
 ## License
