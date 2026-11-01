@@ -6,10 +6,10 @@
 
 ## 可用 Skills
 
-| Skill | 说明 |
-| --- | --- |
-| [`git-commit-push`](skills/git-commit-push/) | 安全暂存预期改动，生成简洁的英文 Conventional Commit 信息，在获得明确确认后将当前分支推送到 `origin`。 |
-| [`windows-utf8-shell`](skills/windows-utf8-shell/) | 在 Windows 中统一使用 PowerShell 7，并为非 ASCII 输入、输出和文件操作显式初始化 UTF-8。 |
+| Skill                                              | 说明                                                                                                   |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [`git-commit-push`](skills/git-commit-push/)       | 安全暂存预期改动，生成简洁的英文 Conventional Commit 信息，在获得明确确认后将当前分支推送到 `origin`。 |
+| [`windows-utf8-shell`](skills/windows-utf8-shell/) | 在 Windows 中统一使用 PowerShell 7，并为非 ASCII 输入、输出和文件操作显式初始化 UTF-8。                |
 
 ## 环境要求
 
@@ -20,7 +20,7 @@
 
 本仓库遵循 [`skills/<name>/SKILL.md`](https://github.com/vercel-labs/skills) 发现结构，可通过 [skills.sh](https://skills.sh/) CLI 安装。
 
-列出可用的 skills：
+启动交互式安装器，并选择要安装的 skills：
 
 ```powershell
 pnpx skills@latest add limi58/skills --list

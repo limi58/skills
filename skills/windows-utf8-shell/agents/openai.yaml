@@ -1,7 +1,7 @@
 interface:
   display_name: "Windows UTF-8 Shell"
-  short_description: "在 Windows 中统一使用 PowerShell 7 和 UTF-8 执行命令"
-  default_prompt: "使用 $windows-utf8-shell 在 Windows 中以 PowerShell 7 和 UTF-8 安全执行命令。"
+  short_description: "Use PowerShell 7 and UTF-8 consistently for commands on Windows"
+  default_prompt: "Use $windows-utf8-shell to safely run commands on Windows with PowerShell 7 and UTF-8."
 
 policy:
   allow_implicit_invocation: true

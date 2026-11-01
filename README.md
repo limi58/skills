@@ -6,10 +6,10 @@ A collection of reusable skills for AI coding agents. Each skill packages focuse
 
 ## Available skills
 
-| Skill | Description |
-| --- | --- |
-| [`git-commit-push`](skills/git-commit-push/) | Safely stages all intended changes, proposes a concise English Conventional Commit message, asks for explicit confirmation, and pushes the current branch to `origin`. |
-| [`windows-utf8-shell`](skills/windows-utf8-shell/) | Standardizes Windows terminal work on PowerShell 7 with explicit UTF-8 initialization for non-ASCII input, output, and file operations. |
+| Skill                                              | Description                                                                                                                                                            |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`git-commit-push`](skills/git-commit-push/)       | Safely stages all intended changes, proposes a concise English Conventional Commit message, asks for explicit confirmation, and pushes the current branch to `origin`. |
+| [`windows-utf8-shell`](skills/windows-utf8-shell/) | Standardizes Windows terminal work on PowerShell 7 with explicit UTF-8 initialization for non-ASCII input, output, and file operations.                                |
 
 ## Requirements
 
@@ -20,7 +20,7 @@ A collection of reusable skills for AI coding agents. Each skill packages focuse
 
 This repository follows the [`skills/<name>/SKILL.md`](https://github.com/vercel-labs/skills) discovery layout and can be installed through the [skills.sh](https://skills.sh/) CLI.
 
-List the available skills:
+Start the interactive installer and choose the skills you want to install:
 
 ```powershell
 pnpx skills@latest add limi58/skills --list
